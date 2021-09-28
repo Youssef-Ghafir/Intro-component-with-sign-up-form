@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+ }
+ body {
+     min-height: 100vh;
+     padding: 100px 13px;
+     background-image: url(/images/bg-intro-desktop.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: #FF7978;
+ }
+ .container {
+     max-width: 75%;
+     margin: 0 auto;
+     display: grid;
+     align-items: center;
+     gap: 20px;
+     grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+ }
+ .container .info {
+     color: #fff;
+ }
+ .container .info h1 {
+     margin-bottom: 1rem;
+     font-size: 2.6rem;
+     max-width: 500px;
+ }
+ .container .info p {
+    max-width: 500px;
+    line-height: 1.8;
+ }
+ .form h3 {
+     padding: 1rem;
+     text-align: center;
+     margin-bottom: 1rem;
+     background-color:  hsl(248, 32%, 49%);
+     color: #fff;
+     border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+     font-size: 1rem;
+ }
+ .form h3 span {
+     font-weight: normal;
+ }
+ .form form {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+     width: 100%;
+     padding: 2.5rem 2rem;
+     background-color: #fff;
+     border-radius: 10px;
+ }
+ .form form input {
+     width: 100%;
+     padding: 1rem 2rem;
+     outline: none;
+     border: 1px solid   hsl(246, 25%, 77%);
+     border-radius: 5px;
+     margin-bottom: 1.3rem;
+ }
+ .form form input:focus {
+     border: 1px solid hsl(249, 10%, 26%);
+ }
+ .form form input::placeholder {
+     color: hsl(249, 10%, 26%) ;
+     font-size: 1rem;
+     font-weight: 500;
+     text-transform: capitalize;
+ }
+ .form form input[type='submit'] {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+    outline: none;
+    cursor: pointer;
+    border: none;
+ }
+ .form form p {
+     text-align: center;
+     font-size: .8rem;
+     color: hsl(246, 25%, 77%);
+ }
+ .form form p > span {
+     color: hsl(0, 100%, 74%);
+     font-weight: bold;
+     cursor: pointer;
+ }
+ @media(max-width:1252px) {
+    .container .info {
+        text-align: center;
+    }
+    .container .info h1,
+    .container .info p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container {
+        grid-template-columns: 1fr;
+    }
+ }
+ @media(max-width:500px) {
+     .container {
+         max-width: 100%;
+     }
+     .form form {
+         padding: 2rem 1rem;
+     }
+ } 
